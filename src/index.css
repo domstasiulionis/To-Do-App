@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin", sans-serif;
+}
+
+body {
+  background-color: hsl(235, 21%, 11%);
+}
+
+/* light */
+.light {
+  background-color: white;
+}
+
+.trash-btn-light {
+  display: none;
+  font-size: 25px;
+  margin-top: 12px;
+  margin-right: 25px;
+  color: rgb(233, 233, 233);
+  cursor: pointer;
+  margin-left: auto;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.new-todo-light {
+  display: flex;
+  width: 90%;
+  height: 80%;
+  margin-top: 11px;
+  margin-left: 70px;
+  padding: 10px 0 10px 0;
+  background-color: gray;
+  border: none;
+  font-size: 18px;
+  background-color: hsl(0, 0%, 100%);
+  color: rgb(0, 0, 0);
+}
+
+.enter-task-light {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -130px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 4rem;
+  width: 100%;
+  color: black;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.56);
+}
+
+.circle-unchecked-task-light {
+  background-color: hsl(0, 0%, 100%);
+  border: 0.2px solid rgb(192, 192, 192);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 12px 0 12px 20px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.footer-light {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px 0 4px 0;
+  border: none;
+  font-size: 16px;
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.56);
+}
+
+.todo-light {
+  display: flex;
+  max-width: 700px;
+  height: 100%;
+  margin: 2px auto 5px auto;
+  padding: 4px 0 4px 0;
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.56);
+  font-size: 18px;
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+  list-style: none;
+}
+
+.wrapper-light {
+  padding: 20px;
+  color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 80px;
+
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 30px;
+  color: white;
+  letter-spacing: 20px;
+}
+
+.background-img {
+  height: 32vh;
+  width: 100%;
+  background: url("./images/bg-desktop-dark.jpg") no-repeat center center/cover;
+}
+
+.background-img-light {
+  height: 32vh;
+  width: 100%;
+  background: url("./images/bg-desktop-light.jpg") no-repeat center center/cover;
+}
+
+.sun-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.enter-task {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -130px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 4rem;
+  width: 100%;
+  background-color: hsl(232, 19%, 15%);
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.56);
+}
+
+.enter-task:hover {
+  outline: 2px solid rgb(100, 100, 100);
+}
+
+.input-task {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-todo {
+  display: flex;
+  width: 90%;
+  height: 80%;
+  margin-top: 11px;
+  margin-left: 70px;
+  padding: 10px 0 10px 0;
+  background-color: gray;
+  border: none;
+  font-size: 18px;
+  background-color: hsl(232, 19%, 15%);
+  color: white;
+}
+
+.new-todo:focus {
+  outline: none;
+}
+
+.new-todo-light:focus {
+  outline: none;
+}
+
+.circle-unchecked {
+  position: absolute;
+  border: 0.2px solid rgb(117, 117, 117);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 15px 0 0 20px;
+}
+
+.footer {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px 0 4px 0;
+  background-color: gray;
+  border: none;
+  font-size: 16px;
+  background-color: hsl(232, 19%, 15%);
+  color: white;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.56);
+}
+
+.footer:hover {
+  background-color: hsl(233, 17%, 18%);
+}
+
+.wrapper {
+  padding: 20px;
+  color: gray;
+}
+
+.all,
+.active,
+.completedFilter {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.all {
+  margin-left: 110px;
+}
+
+.items {
+  margin: 22px;
+  cursor: default;
+}
+
+.clear {
+  margin-left: 95px;
+  cursor: pointer;
+}
+
+.all:hover,
+.active:hover,
+.completedFilter:hover {
+  color: hsl(220, 97%, 61%);
+}
+
+.complete-btn {
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(192, 100%, 67%),
+    hsl(280, 87%, 65%)
+  );
+  color: white;
+  border: 0.2px solid rgb(82, 82, 82);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 12px 0 12px 20px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.todo {
+  display: flex;
+  max-width: 700px;
+  height: 100%;
+  margin: 2px auto 5px auto;
+  padding: 4px 0 4px 0;
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.56);
+  font-size: 18px;
+  background-color: hsl(232, 19%, 15%);
+  color: white;
+}
+
+.todo:hover {
+  background-color: hsl(233, 17%, 18%);
+}
+
+.filter-todo {
+  padding: 1rem;
+}
+
+.todo li {
+  list-style: none;
+}
+
+.todo-item {
+  padding-top: 16px;
+  padding-left: 22px;
+}
+
+.tick {
+  font-size: 25px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  padding-top: 16px;
+  padding-left: 22px;
+}
+
+.none {
+  opacity: 0;
+}
+
+.circle-unchecked-task {
+  background-color: hsl(232, 19%, 15%);
+  border: 0.2px solid rgb(82, 82, 82);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 12px 0 12px 20px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.onactive {
+  color: hsl(220, 97%, 61%);
+  pointer-events: none;
+}
+
+.no-sun {
+  display: none;
+}
+
+.no-moon {
+  display: none;
+}
+
+.moon {
+  position: absolute;
+  max-width: 700px;
+  margin-left: 336px;
+  font-size: 28px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.trash-btn {
+  display: none;
+  font-size: 25px;
+  margin-top: 12px;
+  margin-right: 25px;
+  color: rgb(61, 61, 61);
+  cursor: pointer;
+  margin-left: auto;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.mobile-panel {
+  display: none;
+}
+
+.mobile-panel-light {
+  display: none;
+}
+
+@media screen and (max-width: 725px) {
+  .header {
+    max-width: 500px;
+  }
+
+  .footer {
+    max-width: 500px;
+    padding-left: 50px;
+  }
+
+  .enter-task {
+    max-width: 500px;
+  }
+
+  .wrapper {
+    max-width: 500px;
+  }
+
+  .todo {
+    max-width: 500px;
+  }
+
+  .trash-btn {
+    display: block;
+  }
+
+  .all,
+  .active,
+  .completedFilter {
+    padding-right: 30px;
+    color: gray;
+    margin-right: 28px;
+  }
+
+  .onactive {
+    color: hsl(220, 97%, 61%);
+    pointer-events: none;
+  }
+
+  .not-mobile {
+    display: none;
+  }
+
+  .moon {
+    max-width: 500px;
+  }
+
+  .mobile-panel {
+    display: block;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px 0 20px 0;
+    background-color: gray;
+    font-size: 16px;
+    background-color: hsl(232, 19%, 15%);
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.56);
+  }
+
+  /* light */
+  .header {
+    max-width: 500px;
+  }
+
+  .footer-light {
+    max-width: 500px;
+    padding-left: 50px;
+  }
+
+  .enter-task-light {
+    max-width: 500px;
+  }
+
+  .wrapper-light {
+    max-width: 500px;
+  }
+
+  .todo-light {
+    max-width: 500px;
+  }
+
+  .trash-btn-light {
+    display: block;
+  }
+
+  .all,
+  .active,
+  .completedFilter {
+    padding-right: 30px;
+    color: gray;
+    margin-right: 48px;
+  }
+
+  .onactive {
+    color: hsl(220, 97%, 61%);
+    pointer-events: none;
+  }
+
+  .not-mobile {
+    display: none;
+  }
+
+  .moon {
+    max-width: 500px;
+  }
+
+  .mobile-panel-light {
+    display: block;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px 0 20px 0;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    background-color: hsl(0, 0%, 100%);
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.56);
+  }
+}
